@@ -1,3 +1,11 @@
+GIT
+  remote: https://devbootcampgems:TPNs3zUFrWNKaHz7taEeYhygh@github.com/Devbootcamp/devbootcamp.gem.git
+  revision: d96e886b6d0b8b3bc9e384dcdb6dc901022df564
+  specs:
+    devbootcamp (0.0.3)
+      activesupport (~> 4.0.0)
+      oauth2
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,7 +45,12 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    haml (4.0.3)
+      tilt
     hike (1.2.3)
+    httpauth (0.2.0)
     i18n (0.6.5)
     jbuilder (1.5.2)
       activesupport (>= 3.0.0)
@@ -46,12 +59,23 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    jwt (0.1.8)
+      multi_json (>= 1.5)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.2)
+    multi_xml (0.5.5)
+    multipart-post (1.2.0)
+    oauth2 (0.9.2)
+      faraday (~> 0.8)
+      httpauth (~> 0.2)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
     pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -109,6 +133,8 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  devbootcamp!
+  haml
   jbuilder (~> 1.2)
   jquery-rails
   pg
